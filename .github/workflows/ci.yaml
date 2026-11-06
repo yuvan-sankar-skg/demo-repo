@@ -1,0 +1,13 @@
+name: testing ci workflow
+
+on: workflow_dispatch
+
+jobs:
+  console:
+    runs-on: ubuntu-latest
+    env:
+      NAME: Yuvan
+    steps:
+      - name: testing-job
+        run: 
+          echo "Terminal showing name is $NAME"
